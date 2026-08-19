@@ -188,16 +188,6 @@ const basePhotos = [
     note: "吃饱了遛弯",
     size: "medium",
     seed: 0.98
-  },
-  {
-    id: "photo-019",
-    src: "./photos/efb2921262753afcb471ea62f7fcf30a.jpg",
-    title: "新增照片 13",
-    date: "待补充",
-    location: "待补充",
-    note: "这张照片的信息之后可以继续补充。",
-    size: "medium",
-    seed: 0.98
   }
 ];
 
