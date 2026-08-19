@@ -188,6 +188,16 @@ const basePhotos = [
     note: "吃饱了遛弯",
     size: "medium",
     seed: 0.98
+  },
+  {
+    id: "photo-019",
+    src: "./photos/efb2921262753afcb471ea62f7fcf30a.jpg",
+    title: "新增照片 13",
+    date: "待补充",
+    location: "待补充",
+    note: "这张照片的信息之后可以继续补充。",
+    size: "medium",
+    seed: 0.98
   }
 ];
 
@@ -202,6 +212,8 @@ const cylinder = document.querySelector("#photoCylinder");
 const searchInput = document.querySelector("#searchInput");
 const emptyState = document.querySelector("#emptyState");
 const addPhotoButton = document.querySelector("#addPhotoButton");
+const qixiWelcome = document.querySelector("#qixiWelcome");
+const qixiCloseButton = document.querySelector("#qixiCloseButton");
 const detailDialog = document.querySelector("#detailDialog");
 const detailImage = document.querySelector("#detailImage");
 const detailDate = document.querySelector("#detailDate");
@@ -354,6 +366,9 @@ function setupBackground() {
 addPhotoButton.hidden = true;
 editPhotoButton.hidden = true;
 deletePhotoButton.hidden = true;
+qixiCloseButton.addEventListener("click", () => {
+  qixiWelcome.classList.add("is-hidden");
+});
 searchInput.addEventListener("input", renderPhotos);
 setupBackground();
 renderPhotos();
