@@ -58,6 +58,136 @@ const basePhotos = [
     note: "很普通的一秒，被拍下来以后就变得不普通了。",
     size: "small",
     seed: 0.96
+  },
+  {
+    id: "photo-007",
+    src: "./photos/0a9da664f6f71d13a48b4b8d9bdca833.jpg",
+    title: "新增照片 01",
+    date: "待补充",
+    location: "待补充",
+    note: "这张照片的信息之后可以继续补充。",
+    size: "small",
+    seed: 0.07
+  },
+  {
+    id: "photo-008",
+    src: "./photos/0e794498fddd7108e67e2870e3aaa466.jpg",
+    title: "新增照片 02",
+    date: "待补充",
+    location: "待补充",
+    note: "这张照片的信息之后可以继续补充。",
+    size: "medium",
+    seed: 0.18
+  },
+  {
+    id: "photo-009",
+    src: "./photos/123217441d384fb10f4fb66bec30a547.jpg",
+    title: "新增照片 03",
+    date: "待补充",
+    location: "待补充",
+    note: "这张照片的信息之后可以继续补充。",
+    size: "large",
+    seed: 0.27
+  },
+  {
+    id: "photo-010",
+    src: "./photos/1d634e0862ac7a8d90beae9ea4700269.jpg",
+    title: "新增照片 04",
+    date: "待补充",
+    location: "待补充",
+    note: "这张照片的信息之后可以继续补充。",
+    size: "medium",
+    seed: 0.36
+  },
+  {
+    id: "photo-011",
+    src: "./photos/1e128854f6cdae012dcf22e3b1ed579f.jpg",
+    title: "新增照片 05",
+    date: "待补充",
+    location: "待补充",
+    note: "这张照片的信息之后可以继续补充。",
+    size: "small",
+    seed: 0.44
+  },
+  {
+    id: "photo-012",
+    src: "./photos/2aa8538154100de64596697a03e323f6.jpg",
+    title: "新增照片 06",
+    date: "待补充",
+    location: "待补充",
+    note: "这张照片的信息之后可以继续补充。",
+    size: "large",
+    seed: 0.53
+  },
+  {
+    id: "photo-013",
+    src: "./photos/3f5e6bd4c0763b7c6f9ed5be3ffcdda1.jpg",
+    title: "新增照片 07",
+    date: "待补充",
+    location: "待补充",
+    note: "这张照片的信息之后可以继续补充。",
+    size: "medium",
+    seed: 0.61
+  },
+  {
+    id: "photo-014",
+    src: "./photos/6c8d85201c08dd83941e33a935ab7f28.jpg",
+    title: "新增照片 08",
+    date: "待补充",
+    location: "待补充",
+    note: "这张照片的信息之后可以继续补充。",
+    size: "small",
+    seed: 0.69
+  },
+  {
+    id: "photo-015",
+    src: "./photos/85c1ca7eaa870a400251ed264475a3a1.jpg",
+    title: "新增照片 09",
+    date: "待补充",
+    location: "待补充",
+    note: "这张照片的信息之后可以继续补充。",
+    size: "large",
+    seed: 0.76
+  },
+  {
+    id: "photo-016",
+    src: "./photos/d3ef35dbb2f4be8fde13df8f063de4ed.jpg",
+    title: "新增照片 10",
+    date: "待补充",
+    location: "待补充",
+    note: "这张照片的信息之后可以继续补充。",
+    size: "medium",
+    seed: 0.82
+  },
+  {
+    id: "photo-017",
+    src: "./photos/de0de5147662c533cdcfc77f5f6111a8.jpg",
+    title: "新增照片 11",
+    date: "待补充",
+    location: "待补充",
+    note: "这张照片的信息之后可以继续补充。",
+    size: "small",
+    seed: 0.88
+  },
+  {
+    id: "photo-018",
+    src: "./photos/deb454b1959356ecee73d0b68b323a8e.jpg",
+    title: "新增照片 12",
+    date: "待补充",
+    location: "待补充",
+    note: "这张照片的信息之后可以继续补充。",
+    size: "large",
+    seed: 0.93
+  },
+  {
+    id: "photo-019",
+    src: "./photos/efb2921262753afcb471ea62f7fcf30a.jpg",
+    title: "新增照片 13",
+    date: "待补充",
+    location: "待补充",
+    note: "这张照片的信息之后可以继续补充。",
+    size: "medium",
+    seed: 0.98
   }
 ];
 
