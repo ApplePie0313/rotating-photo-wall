@@ -162,19 +162,26 @@ button {
 }
 
 .qixi-close {
-  position: absolute;
-  z-index: 2;
-  top: 12px;
-  right: 12px;
-  width: 40px;
-  height: 40px;
+  position: fixed;
+  z-index: 40;
+  top: 18px;
+  right: 18px;
+  width: 44px;
+  height: 44px;
   border: 1px solid rgba(255, 255, 255, 0.64);
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.72);
+  background: rgba(255, 255, 255, 0.88);
   color: #7f3154;
   font-size: 26px;
   line-height: 1;
   box-shadow: 0 8px 22px rgba(112, 42, 80, 0.24);
+  cursor: pointer;
+}
+
+.qixi-welcome.is-hidden .qixi-close {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .qixi-sparkles::before,
