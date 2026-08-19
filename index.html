@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>旋转照片墙</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <canvas id="acidBackground" aria-hidden="true"></canvas>
+    <main class="app-shell">
+      <header class="top-bar">
+        <div class="brand">
+          <span class="brand-mark"></span>
+          <span>欢迎来到清华三大校花的 Rotating Photo Wall</span>
+        </div>
+        <label class="search-box" aria-label="搜索照片">
+          <span class="search-icon">⌕</span>
+          <input id="searchInput" type="search" placeholder="搜索标题、地点、备注" autocomplete="off" />
+        </label>
+      </header>
+
+      <section class="stage" aria-label="旋转照片墙">
+        <div class="stage-glow"></div>
+        <div class="cylinder-wrap">
+          <div id="photoCylinder" class="photo-cylinder"></div>
+        </div>
+        <p id="emptyState" class="empty-state" hidden>没有匹配的照片</p>
+      </section>
+
+      <button id="addPhotoButton" class="floating-action" type="button" aria-label="添加照片" title="添加照片">
+        +
+      </button>
+    </main>
+
+    <dialog id="detailDialog" class="modal">
+      <form method="dialog" class="modal-card detail-card">
+        <button class="icon-button close-button" value="close" aria-label="关闭" title="关闭">×</button>
+        <img id="detailImage" class="detail-image" alt="" />
+        <div class="detail-content">
+          <div>
+            <p id="detailDate" class="detail-date"></p>
+            <h1 id="detailTitle" class="detail-title"></h1>
+          </div>
+          <p id="detailLocation" class="detail-location"></p>
+          <p id="detailNote" class="detail-note"></p>
+          <div class="detail-actions">
+            <button id="editPhotoButton" class="secondary-button" type="button">编辑</button>
+            <button id="deletePhotoButton" class="danger-button" type="button">删除</button>
+          </div>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog id="editorDialog" class="modal">
+      <form id="photoForm" class="modal-card editor-card">
+        <button class="icon-button close-button" type="button" data-close-editor aria-label="关闭" title="关闭">×</button>
+        <h2 id="editorTitle">添加照片</h2>
+        <label>
+          <span>照片</span>
+          <input id="photoFile" type="file" accept="image/*" />
+        </label>
+        <label>
+          <span>标题</span>
+          <input id="photoTitle" type="text" required maxlength="40" />
+        </label>
+        <div class="field-grid">
+          <label>
+            <span>日期</span>
+            <input id="photoDate" type="text" maxlength="30" placeholder="例如：高中 / 2026 春天" />
+          </label>
+          <label>
+            <span>地点</span>
+            <input id="photoLocation" type="text" maxlength="40" />
+          </label>
+        </div>
+        <label>
+          <span>备注</span>
+          <textarea id="photoNote" rows="4" maxlength="180"></textarea>
+        </label>
+        <label>
+          <span>管理密码</span>
+          <input id="adminPassword" type="password" required autocomplete="current-password" />
+        </label>
+        <div class="form-actions">
+          <button class="secondary-button" type="button" data-close-editor>取消</button>
+          <button class="primary-button" type="submit">保存</button>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog id="confirmDeleteDialog" class="modal confirm-modal">
+      <form method="dialog" class="modal-card confirm-card">
+        <h2>删除照片</h2>
+        <p id="confirmDeleteText"></p>
+        <label>
+          <span>管理密码</span>
+          <input id="deleteAdminPassword" type="password" required autocomplete="current-password" />
+        </label>
+        <div class="form-actions">
+          <button class="secondary-button" value="cancel">取消</button>
+          <button id="confirmDeleteButton" class="danger-button" type="button">删除</button>
+        </div>
+      </form>
+    </dialog>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
